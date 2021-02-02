@@ -1,4 +1,4 @@
-#define PATH(name)                      "/home/ashish/.local/projects/dwmblocks/blocks/"name
+#define PATH(name)                      "/home/carl/.scripts/"name
 
 /* DELIMITERENDCHAR must be less than 32.
  * At max, DELIMITERENDCHAR - 1 number of clickable blocks will be allowed.
@@ -32,10 +32,14 @@
 
 static Block blocks[] = {
 /*      pathu                           pathc                           interval        signal */
-        { PATH("calendar.sh"),          NULL,                           30,             1},
-        { PATH("volume.sh"),            PATH("volume_button.sh"),       0,              2},
-        { PATH("cpu_temp.sh"),          PATH("cpu_temp_button.sh"),     1,              4},
-        { PATH("battery.sh"),           PATH("battery_button.sh"),      30,             3},
+        { PATH("weather"),              PATH("weather_button"),         0,              3},
+        { PATH("cpu_stats"),            PATH("cpu_stats_button"),       60,             2},
+        { PATH("gpu_stats"),            NULL,                           60,             0},
+        { PATH("upgrades"),             PATH("upgrades_button"),        3600,           4},
+        { PATH("bluetooth"),            PATH("bluetooth_button"),       0,              5},
+        { PATH("volume"),               PATH("volume_button"),          0,              1},
+        { PATH("battery"),              NULL,                           60,             0},
+        { PATH("cdate"),                NULL,                           60,             0},
         { NULL } /* just to mark the end of the array */
 };
 
