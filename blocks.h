@@ -39,6 +39,7 @@ static Block blocks[] = {
         { PATH("my_bitcoin"),           NULL,                           300,            0},
         { PATH("upgrades"),             PATH("upgrades_button"),        3600,           4},
         { PATH("bluetooth"),            PATH("bluetooth_button"),       0,              5},
+        { PATH("internet_status"),      NULL,                           0,              6},
         { PATH("volume"),               PATH("volume_button"),          0,              1},
         { PATH("battery"),              NULL,                           60,             0},
         { PATH("cdate"),                NULL,                           60,             0},
