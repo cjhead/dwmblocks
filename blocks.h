@@ -1,4 +1,5 @@
-#define PATH(name)                      "/home/carl/.scripts/"name
+// #define PATH(name)                      "/home/carl/.scripts/"name
+#define PATH(name)                      "/home/carl/.local/bin/statusbar/"name
 
 /* DELIMITERENDCHAR must be less than 32.
  * At max, DELIMITERENDCHAR - 1 number of clickable blocks will be allowed.
