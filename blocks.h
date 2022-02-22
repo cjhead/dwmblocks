@@ -1,4 +1,3 @@
-// #define PATH(name)                      "/home/carl/.scripts/"name
 #define PATH(name)                      "/home/carl/.local/bin/statusbar/"name
 
 /* DELIMITERENDCHAR must be less than 32.
@@ -35,8 +34,6 @@ static Block blocks[] = {
 /*      pathu                           pathc                           interval        signal */
         { PATH("weather"),              PATH("weather_button"),         0,              3},
         { PATH("cpu_stats"),            PATH("cpu_stats_button"),       60,             2},
-        /* { PATH("gpu_stats"),            NULL,                           60,             0}, */
-        //{ PATH("my_bitcoin"),           PATH("my_bitcoin_button"),      300,            6},
         { PATH("my_bitcoin"),           NULL,                           300,            0},
         { PATH("upgrades"),             PATH("upgrades_button"),        3600,           4},
         { PATH("bluetooth"),            PATH("bluetooth_button"),       0,              5},
